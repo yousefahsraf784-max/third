@@ -4,29 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071a2f">
-<title>صيدلية د. أشرف بدر</title>
+<meta name="description" content="أهلاً بك في صيدلية د. أشرف بدر">
+<title>أهلاً بك | صيدلية د. أشرف بدر</title>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap");
+:root{--navy:#071a2f;--cyan:#58d7d0;--lime:#b9e68a}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font-family:"Tajawal",Arial,sans-serif}
-body{min-height:100vh;display:grid;place-items:center;padding:24px;color:#fff;background:radial-gradient(ellipse at 50% 8%,rgba(88,215,208,.22),transparent 42%),radial-gradient(ellipse at 90% 90%,rgba(185,230,138,.10),transparent 35%),linear-gradient(145deg,#061526 0%,#0b2540 55%,#04111f 100%)}
-.welcome{width:min(100%,560px);padding:42px 28px 38px;text-align:center;border:1px solid rgba(255,255,255,.15);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035));box-shadow:0 24px 70px rgba(0,0,0,.32);backdrop-filter:blur(14px)}
-.logo-wrap{width:158px;height:158px;margin:0 auto 22px;display:grid;place-items:center}
+body{min-height:100vh;display:grid;place-items:center;padding:22px;color:#fff;background:radial-gradient(ellipse at 50% 10%,rgba(88,215,208,.23),transparent 38%),radial-gradient(ellipse at 8% 92%,rgba(185,230,138,.12),transparent 32%),linear-gradient(135deg,#04111f 0%,#0b2945 52%,#061526 100%)}
+.welcome{position:relative;isolation:isolate;overflow:hidden;width:min(100%,590px);padding:clamp(30px,6vw,54px) 26px 38px;text-align:center;border:1px solid rgba(255,255,255,.17);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.045));box-shadow:0 28px 90px rgba(0,0,0,.38);backdrop-filter:blur(18px)}
+.welcome:before{content:"";position:absolute;z-index:-1;width:280px;height:280px;top:-190px;left:calc(50% - 140px);border-radius:50%;background:rgba(88,215,208,.18);filter:blur(18px)}
+.logo-wrap{width:174px;height:174px;margin:0 auto 23px;padding:10px;border:1px solid rgba(255,255,255,.2);border-radius:32px;background:rgba(255,255,255,.08);box-shadow:0 14px 38px rgba(0,0,0,.2)}
 .logo{width:100%;height:100%;object-fit:contain;display:block}
-.kicker{margin:0 0 8px;color:#b9e68a;font-size:14px;font-weight:700;letter-spacing:.5px}
-h1{margin:0;color:#fff;font-size:clamp(27px,6vw,39px);font-weight:800;line-height:1.5}
+.kicker{margin:0 0 9px;color:var(--lime);font-size:15px;font-weight:800;letter-spacing:.4px}
+h1{margin:0;color:#fff;font-size:clamp(28px,6vw,42px);font-weight:800;line-height:1.5}
 h1 span{display:block;color:#fff}
-.welcome p{margin:12px auto 27px;max-width:390px;color:#d5e3ed;font-size:17px;line-height:1.9}
-.enter{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:225px;padding:15px 30px;border:1px solid rgba(255,255,255,.25);border-radius:16px;background:linear-gradient(120deg,#58d7d0,#b9e68a);color:#082039;text-decoration:none;font-size:19px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.24);transition:transform .2s,box-shadow .2s}
-.enter:hover{transform:translateY(-3px);box-shadow:0 17px 38px rgba(0,0,0,.3)}
+.welcome-copy{margin:13px auto 28px;max-width:410px;color:#dce9f2;font-size:17px;line-height:2}
+.enter{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:240px;padding:16px 30px;border:1px solid rgba(255,255,255,.32);border-radius:17px;background:linear-gradient(115deg,var(--cyan),var(--lime));color:#082039;text-decoration:none;font-size:19px;font-weight:800;box-shadow:0 13px 34px rgba(0,0,0,.28);transition:transform .2s,filter .2s}
+.enter:hover{transform:translateY(-3px);filter:brightness(1.06)}
 .enter b{font-size:22px}
-.note{margin:22px 0 0;color:#91a9ba;font-size:12px}
-@media(max-width:420px){.welcome{padding:32px 20px;border-radius:25px}.logo-wrap{width:140px;height:140px} .welcome p{font-size:15px}}
+.note{margin:24px 0 0;color:#a8bdcc;font-size:12px}
+@media(max-width:420px){.welcome{padding:30px 19px;border-radius:26px}.logo-wrap{width:148px;height:148px;border-radius:27px}.welcome-copy{font-size:15px}}
 </style>
 </head>
 <body>
 <main class="welcome">
-  <div class="logo-wrap"><img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAA
+ <div class="logo-wrap"><img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAA
 AAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAA
@@ -4552,11 +4555,11 @@ AvMoHb4hIEd1Vih/c8SRc+7KcHcD0TMw5xeHxNNtiKTj9izLbBkstyuj3vYe
 pW4cekrBlLPd5eybkEj7StwMBWGZCTMKEENAAvyo49rGYlIfiuSqh2gGQGoO
 cAPPv2QYRAHJUJadggYkkCFUSJgCW9kxdpQLi4bT9iD/2Q==
 " alt="شعار صيدلية د. أشرف بدر"></div>
-  <p class="kicker">أهلاً وسهلاً بك</p>
-  <h1>مرحباً بك في <span>صيدلية د. أشرف بدر</span></h1>
-  <p>نسعد بزيارتك، ونتمنى لك دوام الصحة والعافية.</p>
-  <a class="enter" href="pharmacy.html">ادخل إلى الموقع <b>←</b></a>
-  <p class="note">صيدلية د. أشرف بدر — رعايتكم تهمنا</p>
+ <p class="kicker">أهلاً وسهلاً بك</p>
+ <h1>مرحباً بك في <span>صيدلية د. أشرف بدر</span></h1>
+ <p class="welcome-copy">يسعدنا زيارتك لصيدليتنا. صحتك وراحتك دايماً في اهتمامنا.</p>
+ <a class="enter" href="pharmacy.html">ادخل إلى الموقع <b>←</b></a>
+ <p class="note">صيدلية د. أشرف بدر · رعايتكم تهمنا</p>
 </main>
 </body>
 </html>
