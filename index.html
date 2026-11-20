@@ -6,26 +6,24 @@
 <meta name="theme-color" content="#071a2f">
 <meta name="description" content="أهلاً بك في صيدلية د. أشرف بدر">
 <title>أهلاً بك | صيدلية د. أشرف بدر</title>
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap");
-:root{--navy:#090d1d;--cyan:#64d8c8;--lime:#d7b56d;--violet:#9b8cff;--rose:#d78ba8}
+<style>@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800&display=swap");
+:root{--navy:#071a2f;--navy2:#0b2540;--cyan:#58d7d0;--lime:#b9e68a;--white:#f7fbff;--muted:#a9bbca;--line:rgba(255,255,255,.12)}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;font-family:"Tajawal",Arial,sans-serif}
-body{min-height:100vh;display:grid;place-items:center;padding:22px;color:#fff;background:radial-gradient(ellipse at 12% 12%,rgba(155,140,255,.20),transparent 34%),radial-gradient(ellipse at 88% 18%,rgba(100,216,200,.18),transparent 35%),radial-gradient(ellipse at 50% 100%,rgba(215,139,168,.13),transparent 38%),linear-gradient(135deg,#080b19 0%,#17172f 46%,#09212c 100%)}
-.welcome{position:relative;isolation:isolate;overflow:hidden;width:min(100%,590px);padding:clamp(30px,6vw,54px) 26px 38px;text-align:center;border:1px solid rgba(215,181,109,.28);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(115,105,160,.07) 48%,rgba(100,216,200,.055));box-shadow:0 28px 90px rgba(0,0,0,.48),0 0 45px rgba(155,140,255,.09);backdrop-filter:blur(18px)}
-.welcome:before{content:"";position:absolute;z-index:-1;width:280px;height:280px;top:-190px;left:calc(50% - 140px);border-radius:50%;background:linear-gradient(135deg,rgba(100,216,200,.2),rgba(155,140,255,.2));filter:blur(18px)}
-.logo-wrap{width:174px;height:174px;margin:0 auto 23px;padding:10px;border:1px solid rgba(215,181,109,.35);border-radius:32px;background:rgba(255,255,255,.08);box-shadow:0 14px 38px rgba(0,0,0,.2)}
+body{min-height:100vh;display:grid;place-items:center;padding:22px;color:#fff;background:radial-gradient(ellipse at 50% -15%,rgba(48,119,157,.34),transparent 48%),radial-gradient(ellipse at 0% 60%,rgba(23,93,111,.16),transparent 38%),linear-gradient(145deg,#061526 0%,#081e34 48%,#04111f 100%)}
+.welcome{position:relative;isolation:isolate;overflow:hidden;width:min(100%,590px);padding:clamp(30px,6vw,54px) 26px 38px;text-align:center;border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));box-shadow:0 28px 90px rgba(0,0,0,.42);backdrop-filter:blur(18px)}
+.welcome:before{content:"";position:absolute;z-index:-1;width:280px;height:280px;top:-190px;left:calc(50% - 140px);border-radius:50%;background:linear-gradient(135deg,rgba(88,215,208,.20),rgba(185,230,138,.18));filter:blur(18px)}
+.logo-wrap{width:174px;height:174px;margin:0 auto 23px;padding:10px;border:1px solid rgba(88,215,208,.35);border-radius:32px;background:rgba(255,255,255,.06);box-shadow:0 14px 38px rgba(0,0,0,.2)}
 .logo{width:100%;height:100%;object-fit:contain;display:block}
-.kicker{margin:0 0 9px;color:#e4c783;font-size:15px;font-weight:800;letter-spacing:.4px}
+.kicker{margin:0 0 9px;color:#a8c4d2;font-size:15px;font-weight:800;letter-spacing:.4px}
 h1{margin:0;color:#fff;font-size:clamp(28px,6vw,42px);font-weight:800;line-height:1.5}
-h1 span{display:block;color:#fff}
-.welcome-copy{margin:13px auto 28px;max-width:410px;color:#dce9f2;font-size:17px;line-height:2}
-.enter{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:240px;padding:16px 30px;border:1px solid rgba(255,255,255,.32);border-radius:17px;background:linear-gradient(110deg,#64d8c8 0%,#a8a0ff 52%,#d7b56d 100%);color:#101426;text-decoration:none;font-size:19px;font-weight:800;box-shadow:0 13px 34px rgba(0,0,0,.28);transition:transform .2s,filter .2s}
+h1 span{display:block;color:var(--cyan)}
+.welcome-copy{margin:13px auto 28px;max-width:410px;color:#c7dbe8;font-size:17px;line-height:2}
+.enter{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:240px;padding:16px 30px;border:1px solid rgba(255,255,255,.32);border-radius:17px;background:linear-gradient(135deg,var(--cyan),var(--lime));color:#082039;text-decoration:none;font-size:19px;font-weight:800;box-shadow:0 13px 34px rgba(0,0,0,.28);transition:transform .2s,filter .2s}
 .enter:hover{transform:translateY(-3px);filter:brightness(1.06)}
 .enter b{font-size:22px}
-.note{margin:24px 0 0;color:#a8bdcc;font-size:12px}
-@media(max-width:420px){.welcome{padding:30px 19px;border-radius:26px}.logo-wrap{width:148px;height:148px;border-radius:27px}.welcome-copy{font-size:15px}}
-</style>
+.note{margin:24px 0 0;color:#a9bbca;font-size:12px}
+@media(max-width:420px){.welcome{padding:30px 19px;border-radius:26px}.logo-wrap{width:148px;height:148px;border-radius:27px}.welcome-copy{font-size:15px}}</style>
 </head>
 <body>
 <main class="welcome">
