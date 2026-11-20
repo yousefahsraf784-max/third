@@ -3,104 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071a2c">
-<meta name="description" content="صيدلية الدكتور أشرف بدر">
-<title>صيدلية الدكتور أشرف بدر</title>
+<meta name="theme-color" content="#071b2e">
+<meta name="description" content="الموقع الرسمي لصيدلية الدكتور أشرف">
+<title>صيدلية الدكتور أشرف</title>
 <style>
-:root{--bg:#06182a;--panel:#142b3e;--panel2:#0c2032;--line:#294052;--text:#f3f7fb;--muted:#9aafbf;--teal:#55d1c9;--lime:#b8e77a;--gold:#e5c77c}
+:root{--blue:#1684b5;--blue-dark:#075985;--green:#22a879;--ink:#f2f8fc;--muted:#a9bfce;--pale:#14364c;--bg:#071b2e;--panel:#102b40;--line:#2c5268}
 *{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% 18%,#123d50 0%,#091f33 42%,var(--bg) 82%);min-height:100vh}
-header{position:sticky;top:0;z-index:5;background:#071a2ceF;backdrop-filter:blur(16px);border-bottom:1px solid #294052}
-nav{max-width:900px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{font-weight:800;color:var(--text);font-size:16px;text-decoration:none}
-.navlinks{display:flex;gap:7px;flex-wrap:wrap}
-.navlinks a{color:var(--muted);text-decoration:none;font-size:12px;padding:8px 10px;border-radius:20px}
-.navlinks a:hover{color:var(--teal);background:#ffffff0b}
-main{width:min(100% - 32px,760px);margin:auto;padding:28px 0 48px}
-.hero{text-align:center;padding:48px 18px 54px}
-.logo{width:150px;height:150px;margin:0 auto 28px;border-radius:38px;background:linear-gradient(145deg,#29485b,#102b40);border:1px solid #52718466;box-shadow:inset 0 1px 0 #ffffff18,0 18px 50px #0005;display:grid;place-items:center}
-.logo-inner{width:106px;height:78px;border-radius:25px;background:linear-gradient(145deg,#172b3c,#0b1b2a);display:grid;place-items:center;color:var(--lime);font-size:35px}
-.eyebrow{color:#a4bdc9;font-weight:700;letter-spacing:4px;font-size:13px;margin:0 0 18px}
-.hero h1{font-size:clamp(29px,6vw,47px);line-height:1.4;margin:0 0 10px}
-.hero h1 span{color:var(--teal)}
-.hero .lead{font-size:20px;margin:0 0 9px;color:#e3edf3}
-.hero .sub{font-size:16px;color:var(--muted);margin:0}
-.pill{display:inline-block;margin-top:25px;padding:12px 20px;border-radius:28px;border:1px solid #46617366;background:#ffffff09;color:#c4d5df}
-section{margin:0 0 22px;padding:28px 24px 25px;border:1px solid #49617466;border-radius:30px;background:linear-gradient(135deg,#1a3548e8,#10243ae8);box-shadow:inset 0 1px 0 #ffffff0b,0 18px 42px #0002;scroll-margin-top:90px}
-.section-title{display:flex;align-items:center;gap:18px;margin-bottom:25px}
-.section-icon{flex:0 0 70px;height:70px;border-radius:23px;background:#2b566366;border:1px solid #4a7a8466;display:grid;place-items:center;color:var(--teal);font-size:27px}
-.section-title small{display:block;color:#91b2c0;letter-spacing:3px;font-size:12px;font-weight:700;margin-bottom:8px}
-.section-title h2{font-size:clamp(23px,4vw,32px);margin:0}
-.items{display:grid;gap:14px}
-.item{min-height:112px;display:flex;align-items:center;gap:18px;padding:18px 20px;border-radius:27px;background:linear-gradient(110deg,#0b2032,#0d2235);border:1px solid #30485b88;box-shadow:inset 0 1px 0 #ffffff08}
-.item-icon{width:78px;height:78px;flex:0 0 78px;border-radius:24px;background:#f5f7f8;color:#172c3c;display:grid;place-items:center;font-size:31px;font-weight:800}
-.item-copy{min-width:0;flex:1}
-.item-copy h3{font-size:19px;margin:0 0 7px}
-.item-copy p{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
-.arrow{font-size:20px;color:#7896a6}
-a.item{text-decoration:none;color:inherit}
-a.item:hover{border-color:#58cfc588;transform:translateY(-1px)}
-.item.disabled{opacity:.78}
-.review{border-color:#756c4b88;background:linear-gradient(135deg,#263746,#182b3c)}
-.review .section-icon{color:var(--gold);background:#665c3b55;border-color:#9c895055}
-.review .section-title small{color:#d2bd83}
-.review .item{background:linear-gradient(110deg,#484638,#353b3a);border-color:#8a805b88;min-height:74px;color:#f7e5b3;font-weight:800}
-.review .item-icon{display:none}
-.note{text-align:center;color:#7892a3;font-size:12px;line-height:1.8;padding:10px 12px 0}
-footer{text-align:center;padding:22px 15px 34px;color:#a8bac6;font-size:14px}
-footer strong{display:block;margin-top:9px;color:#dce8ef;font-size:16px}
-footer .plus{width:48px;height:48px;margin:auto;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--teal),var(--lime));color:#092338;font-size:28px;font-weight:800}
-@media(max-width:560px){nav{align-items:flex-start;flex-direction:column}.navlinks{width:100%}main{width:calc(100% - 24px);padding-top:14px}.hero{padding:38px 10px 42px}section{padding:23px 17px 20px;border-radius:26px}.section-icon{flex-basis:60px;height:60px}.item{gap:13px;padding:15px 14px;min-height:96px;border-radius:23px}.item-icon{width:65px;height:65px;flex-basis:65px;border-radius:21px;font-size:26px}.item-copy h3{font-size:17px}.item-copy p{font-size:13px}}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 50% 0%,#123e55 0%,#0a263b 42%,var(--bg) 85%);min-height:100vh}
+header{position:sticky;top:0;z-index:5;background:#071b2eeF;backdrop-filter:blur(12px);border-bottom:1px solid #2b5065}
+nav{max-width:1080px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:800;color:#eaf8ff;font-size:18px;text-decoration:none}
+.navlinks{display:flex;gap:10px;flex-wrap:wrap}
+.navlinks a{color:var(--muted);text-decoration:none;font-size:14px;padding:8px 11px;border-radius:10px}
+.navlinks a:hover{background:#ffffff12;color:#55d6c2}
+main{max-width:1080px;margin:auto;padding:34px 22px 70px}
+.hero{min-height:390px;border-radius:30px;padding:60px 24px;display:grid;place-items:center;text-align:center;color:white;background:radial-gradient(circle at 15% 15%,#25b58a 0,transparent 31%),linear-gradient(135deg,#087e9b,#075985 70%);box-shadow:0 22px 55px #0005;position:relative;overflow:hidden;border:1px solid #65cbb344}
+.hero:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff30;border-radius:50%;left:-90px;bottom:-150px}
+.logo-placeholder{width:92px;height:92px;border-radius:28px;background:#ffffff20;border:1px solid #ffffff70;display:grid;place-items:center;font-size:43px;margin:0 auto 22px;box-shadow:0 12px 30px #00354a55}
+.hero h1{font-size:clamp(28px,5vw,46px);line-height:1.4;margin:0 0 12px}
+.hero p{font-size:17px;line-height:1.9;color:#e7fffa;margin:0 auto 25px;max-width:620px}
+.primary{display:inline-flex;justify-content:center;align-items:center;padding:14px 24px;border-radius:14px;background:#eafffb;color:#075985;font-weight:800;text-decoration:none;box-shadow:0 9px 24px #003b5030}
+section{padding-top:58px;scroll-margin-top:85px}
+.section-head{text-align:center;margin-bottom:24px}
+.section-head h2{font-size:27px;margin:0 0 9px;color:#63d7c7}
+.section-head p{margin:0;color:var(--muted);line-height:1.8}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:linear-gradient(145deg,#16384ee8,#0e293de8);border:1px solid #3a647766;border-radius:20px;padding:23px;box-shadow:inset 0 1px 0 #ffffff0b,0 10px 28px #0003;backdrop-filter:blur(10px)}
+.card h3{margin:0 0 8px;font-size:19px;color:#eaf8ff}
+.card p{margin:0 0 17px;color:var(--muted);font-size:14px;line-height:1.8;overflow-wrap:anywhere}
+.action{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;padding:12px 16px;border:0;border-radius:13px;background:linear-gradient(110deg,var(--blue),var(--green));color:white;font:700 15px Tahoma,Arial,sans-serif;text-decoration:none;cursor:pointer}
+.action:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.action:disabled{opacity:.45;cursor:default}
+.action.empty{min-height:48px;background:#ffffff0a;border:1px dashed #52768a;color:transparent;cursor:default}
+.small-note{text-align:center;color:#88a8ba;font-size:13px;margin-top:22px}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:13px;border-top:1px solid #294b60;background:#071a2c}
+@media(max-width:650px){nav{align-items:flex-start;flex-direction:column}.navlinks{width:100%}.grid{grid-template-columns:1fr}.hero{min-height:350px;padding:45px 20px}}
 </style>
 </head>
 <body>
 <header><nav>
-<a class="brand" href="#home">صيدلية الدكتور أشرف بدر</a>
-<div class="navlinks"><a href="#contacts">تواصل معنا</a><a href="#payments">الدفع</a><a href="#social">صفحاتنا</a><a href="#reviews">التقييم</a></div>
+<a class="brand" href="#home">صيدلية الدكتور أشرف</a>
+<div class="navlinks"><a href="#contacts">التواصل</a><a href="#payments">الدفع</a><a href="#social">صفحاتنا</a><a href="#reviews">تقييم جوجل</a></div>
 </nav></header>
 <main>
-<div class="hero" id="home">
-<div class="logo"><div class="logo-inner">✚</div></div>
-<p class="eyebrow">YOUR TRUSTED PHARMACY</p>
-<h1>Dr. Ashraf Badr <span>Pharmacy</span></h1>
-<p class="lead">صحتكم أولويتنا</p>
-<p class="sub">كل ما تحتاجونه في مكان واحد</p>
-<div class="pill">✦ &nbsp; Care • Trust • Quality</div>
+<section class="hero" id="home">
+<div>
+<div class="logo-placeholder" aria-label="مكان شعار الصيدلية">+</div>
+<h1>مرحباً بكم في صيدلية الدكتور أشرف</h1>
+<p>نسعد بزيارتكم! من هنا تقدروا توصلوا لبيانات التواصل وطرق الدفع وصفحات الصيدلية.</p>
+<a class="primary" href="#contacts">استكشف وسائل التواصل</a>
 </div>
+</section>
 
 <section id="contacts">
-<div class="section-title"><div class="section-icon">↗</div><div><small>WE'RE HERE FOR YOU</small><h2>تواصل معنا</h2></div></div>
-<div class="items">
-<a class="item" href="tel:01227968585"><div class="item-icon">☎</div><div class="item-copy"><h3>اتصل بنا</h3><p>012 27968585</p></div><span class="arrow">↗</span></a>
-<div class="item disabled"><div class="item-icon">◉</div><div class="item-copy"><h3>WhatsApp</h3><p>راسلنا مباشرة</p></div><span class="arrow">↗</span></div>
-<div class="item disabled"><div class="item-icon">📍</div><div class="item-copy"><h3>موقعنا</h3><p>افتح موقع الصيدلية على خرائط جوجل</p></div><span class="arrow">↗</span></div>
+<div class="section-head"><h2>جميع أرقام التواصل</h2><p>يسعدنا تواصلكم معنا.</p></div>
+<div class="grid">
+<article class="card"><h3>أرقام التليفون</h3><p>012 27968585</p><a class="action" href="tel:01227968585">اتصل بالصيدلية</a></article>
+<article class="card"><h3>واتساب</h3><p>011 58771600</p><a class="action" href="https://wa.me/201158771600" target="_blank" rel="noopener">راسلنا على واتساب</a></article>
+<article class="card"><h3>موقع الصيدلية</h3><p>الأباجية، شارع 9، المقطم، القاهرة</p><a class="action" href="https://www.google.com/maps/search/?api=1&amp;query=288M%2B4FR%20My%20pharmacy%20Dr.%20Ashraf%20Pharmacy%20Al%20Abageyah%20Street%209%20Al%20Mokattam%20Cairo%20Egypt" target="_blank" rel="noopener">افتح الموقع على خرائط جوجل</a></article>
 </div>
 </section>
 
 <section id="payments">
-<div class="section-title"><div class="section-icon">◇</div><div><small>FAST &amp; EASY</small><h2>طرق الدفع</h2></div></div>
-<div class="items">
-<div class="item disabled"><div class="item-icon" style="font-size:18px;color:#7049a4">IP</div><div class="item-copy"><h3>InstaPay</h3><p>ادفع بأمان وسهولة</p></div><span class="arrow">↗</span></div>
-<div class="item disabled"><div class="item-icon" style="color:#d71935">V</div><div class="item-copy"><h3>Vodafone Cash</h3><p>دفع سريع بالموبايل</p></div><span class="arrow">↗</span></div>
+<div class="section-head"><h2>طرق الدفع</h2><p>اختاروا طريقة الدفع المناسبة.</p></div>
+<div class="grid">
+<article class="card"><h3>InstaPay</h3><p>عنوان الدفع: ashraf1985badr@instapay</p><button class="action" type="button" onclick="navigator.clipboard&amp;&amp;navigator.clipboard.writeText('ashraf1985badr@instapay').then(()=>this.textContent='تم نسخ عنوان الدفع')">انسخ عنوان الدفع</button></article>
+<article class="card"><h3>Vodafone Cash</h3><p>&nbsp;</p><button class="action empty" type="button" disabled aria-label="سيتم إضافة بيانات فودافون كاش لاحقاً">&nbsp;</button></article>
 </div>
 </section>
 
 <section id="social">
-<div class="section-title"><div class="section-icon">◎</div><div><small>STAY CONNECTED</small><h2>تابع صفحاتنا</h2></div></div>
-<div class="items">
-<div class="item disabled"><div class="item-icon" style="color:#1877f2">f</div><div class="item-copy"><h3>Facebook</h3><p>الأخبار والتحديثات</p></div><span class="arrow">↗</span></div>
-<div class="item disabled"><div class="item-icon" style="color:#d64b8a">◎</div><div class="item-copy"><h3>Instagram</h3><p>تابع آخر أخبارنا</p></div><span class="arrow">↗</span></div>
-<div class="item disabled"><div class="item-icon" style="color:#111">♪</div><div class="item-copy"><h3>TikTok</h3><p>شاهد فيديوهاتنا</p></div><span class="arrow">↗</span></div>
+<div class="section-head"><h2>تابع صفحاتنا</h2><p>تقدروا تتابعوا الصيدلية على منصات التواصل الاجتماعي.</p></div>
+<div class="grid">
+<article class="card"><h3>Facebook</h3><p>&nbsp;</p><button class="action empty" type="button" disabled aria-label="رابط فيسبوك">&nbsp;</button></article>
+<article class="card"><h3>Instagram</h3><p>&nbsp;</p><button class="action empty" type="button" disabled aria-label="رابط إنستجرام">&nbsp;</button></article>
+<article class="card"><h3>TikTok</h3><p>&nbsp;</p><button class="action empty" type="button" disabled aria-label="رابط تيك توك">&nbsp;</button></article>
 </div>
 </section>
 
-<section class="review" id="reviews">
-<div class="section-title"><div class="section-icon">★</div><div><small>YOUR OPINION MATTERS</small><h2>هل أعجبتك خدمتنا؟</h2></div></div>
-<p style="color:#b8c4cb;margin:0 0 18px;line-height:1.8">شاركنا تجربتك وساعد الآخرين في الوصول إلينا.</p>
-<div class="item disabled"><div class="item-copy"><h3>قيّمنا على Google</h3></div><span class="arrow">↗</span></div>
+<section id="reviews">
+<div class="section-head"><h2>تقييم صيدلية الدكتور أشرف</h2><p>يسعدنا معرفة رأيكم في خدمتنا.</p></div>
+<div class="card"><button class="action empty" type="button" disabled aria-label="رابط تقييم جوجل">&nbsp;</button></div>
 </section>
-<p class="note">سيتم تفعيل أزرار التواصل والدفع والصفحات فور إضافة الروابط والبيانات الصحيحة.</p>
 </main>
-<footer><div class="plus">+</div><strong>Dr. Ashraf Badr Pharmacy</strong><span>صيدلية الدكتور أشرف بدر</span><br>© 2026 جميع الحقوق محفوظة</footer>
+<footer>© <span id="year">2026</span> صيدلية الدكتور أشرف — جميع الحقوق محفوظة</footer>
 </body>
 </html>
