@@ -20,6 +20,37 @@ footer{text-align:center;padding:28px 10px 4px;color:#718a9d;font-size:11px}foot
 body.is-ar{font-family:"Tajawal","Poppins",Arial,sans-serif}body.is-en{direction:ltr}body.is-en .topbar{direction:ltr}body.is-en .brand{direction:ltr}body.is-en .section-head{direction:ltr}body.is-en .link-card{direction:ltr;text-align:left}body.is-en .go{transform:scaleX(-1)}body.is-en .dual-card{direction:ltr}
 @media(max-width:620px){body{padding:0 13px 25px}.topbar{min-height:70px}.brand{font-size:13px}.brand small{font-size:8px}.hero{padding:34px 7px 25px}.logo-wrap{width:138px;height:138px}.section{padding:17px;border-radius:21px}.cards{grid-template-columns:1fr}.dual-card{grid-template-columns:1fr 1fr}.link-card{min-height:70px}}
 @media(max-width:370px){.brand{font-size:11px}.brand-mark{width:32px;height:32px}.lang-btn{min-width:37px;padding:7px 8px}.dual-button{font-size:11px}}
+
+/* Exact original pharmacy_qr color theme */
+:root{
+ --navy:#071a2f;--navy2:#0b2540;--blue:#123d61;
+ --cyan:#58d7d0;--lime:#b9e68a;--white:#f7fbff;
+ --muted:#a9bbca;--line:rgba(255,255,255,.11);
+ --glass:rgba(255,255,255,.055);
+}
+body{
+ background:
+ radial-gradient(ellipse at 50% -15%,rgba(48,119,157,.34),transparent 48%),
+ radial-gradient(ellipse at 0% 60%,rgba(23,93,111,.16),transparent 38%),
+ linear-gradient(145deg,#061526 0%,#081e34 48%,#04111f 100%) !important;
+}
+.section{
+ border-color:var(--line) !important;
+ background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.025)) !important;
+}
+.link-card{
+ border-color:rgba(255,255,255,.11) !important;
+ background:rgba(4,20,35,.38) !important;
+}
+.link-card:hover{
+ border-color:rgba(88,215,208,.34) !important;
+ background:rgba(20,57,77,.55) !important;
+}
+.section-symbol{
+ color:var(--cyan) !important;
+ background:rgba(88,215,208,.08) !important;
+ border-color:rgba(88,215,208,.34) !important;
+}
 </style>
 </head>
 <body class="is-ar">
